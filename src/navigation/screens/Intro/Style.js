@@ -4,14 +4,14 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
 
     top2: {
-      width: 450,
-      height: 490,
-      marginLeft:-10,
-      marginTop:-140
+      width: 470,
+      height: 430,
+      marginLeft:0,
+      marginTop:-100
     },
     center2: {
       width: 200,
-      height: 200,
+      height: 220,
       justifyContent: 'center',
       alignItems: 'center',
       marginTop:370,
@@ -27,10 +27,10 @@ export const styles = StyleSheet.create({
     },
     search: {
       textAlign: 'center',  
-      color: '#831ba9',   
+      color: '#562b63',   
       fontSize:20,
       fontWeight:'bold',
-      marginTop:1      
+      marginTop:180,     
     },
     publish: {
       textAlign: 'center',  
@@ -44,15 +44,24 @@ export const styles = StyleSheet.create({
       width: 180,
       height: 220,
       marginLeft:-10,
-      marginTop:1
+      // marginBottom:-40
     },
-    continue: {
-      // backgroundColor: "#5ed9c6",
-      flex: 1,
-      backgroundColor: 'red',
-      borderRadius: 10,
+    startbutton: {
+      backgroundColor: "#831ba9",
+      fontSize:18,
+      color:'#fff',
+      borderRadius: 40,
       justifyContent: 'center',
       alignItems: 'center',
-      marginLeft:40
-    }
+      // marginLeft:10,
+      textAlign: 'center',
+      marginLeft : 100,
+      marginRight:100,
+      marginTop:global.screenheight - 120,
+      paddingTop:8,
+      position:'absolute',      
+      width:(global.screenwidth - 200) ,
+      height:40,     
+    },
+
   });
