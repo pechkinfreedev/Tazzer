@@ -29,7 +29,7 @@ const slides = [
     },
     {
       key: 3,
-      title: 'PAY ONLINE AFTER SEVICE',
+      title: 'PAY ONLINE WITHIN SEC',
       text1: 'Publishing and graphic design, Lorem ipsum is a placeholder',
       text2:'text commonly used to',
       text3: 'demonstrate the',
