@@ -12,6 +12,13 @@ import Booking from "./screens/Booking/Booking"
 import Scheduling from "./screens/Scheduling/Scheduling"
 import Timeclick  from './screens/Timeclick/Timeclick'
 import Selectjob   from './screens/Selectjob/Selectjob'
+import Request   from './screens/Request/Request'
+import Timeclock from './screens/Timeclock/Timeclock'
+import Details from './screens/Details/Details'
+import Timesheet from './screens/Timesheet/Timesheet'
+import Checklist from './screens/Checklist/Checklist'
+import Morning from './screens/Morning/Morning'
+import Meeting from './screens/Meeting/Meeting'
 
 import {heightPercentageToDP, widthPercentageToDP} from 'react-native-responsive-screen';
 
@@ -40,6 +47,13 @@ export default function createHomeStack() {
             <Stack.Screen name="Scheduling" component={Scheduling} />
             <Stack.Screen name="Timeclick" component={Timeclick} />
             <Stack.Screen name="Selectjob" component={Selectjob} />
+            <Stack.Screen name="Request" component={Request} />
+            <Stack.Screen name="Timeclock" component={Timeclock} />
+            <Stack.Screen name="Details" component={Details} />
+            <Stack.Screen name="Timesheet" component={Timesheet} />
+            <Stack.Screen name="Checklist" component={Checklist} />
+            <Stack.Screen name="Morning" component={Morning} />
+            <Stack.Screen name="Meeting" component={Meeting} />
         </Stack.Navigator>
     )
 }

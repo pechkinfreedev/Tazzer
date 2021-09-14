@@ -4,7 +4,7 @@ import {styles} from './Style';
 import {images} from '../../../constants/images';
 import { useNavigation } from '@react-navigation/native';
 
-const {ichome, icdia,icformat , icperson} = images;
+const {ichome, icdia,icformat , icperson, Ellipse852} = images;
 
 export const Bottommenu = () =>  {
     const navigation = useNavigation();
@@ -31,7 +31,7 @@ export const Bottommenu = () =>  {
             </View>
             
             <View style={styles.circleview}>
-                <Text style={ styles.circle}>+</Text>
+                <Image source={Ellipse852} style={styles.circle}/>
             </View>
         </View>
     )

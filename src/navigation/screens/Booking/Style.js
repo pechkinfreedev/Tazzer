@@ -200,6 +200,7 @@ export const styles = StyleSheet.create({
       fontSize:12,
   },
   bottommenu0: {
-      marginTop:70,
+    marginTop:global.screenheight - 85,
+    position:'absolute'
   },
 })

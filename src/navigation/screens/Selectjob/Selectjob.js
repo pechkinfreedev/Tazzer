@@ -5,12 +5,17 @@ import {images} from '../../../constants/images';
 import { useNavigation } from '@react-navigation/native';
 import {Bottommenu} from '../Bottommenu/Bottommenu';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
+import CircleCheckBox, {LABEL_POSITION} from 'react-native-circle-checkbox';  
 
-const {icarrow, clean1,  clock, request, timesheet, icbrightness,sman4,uncheck, Ellipse85, booking, Rectangle202, Rectangle285,Rectangle290, Ellipse71, Ellipse712,Ellipse713, schedule, searchimg2, searchimg3, cleaning,Gardeners ,handyman,Rectangle1 ,Rectangle2 ,Rectangle3 , Rectangle4} = images;
+const {icarrow, clean1,  clock, request, timesheet, icbrightness, Rectangle202, Ellipse853,} = images;
 
-const Timeclick = () =>  {
+const Selectjob = () =>  {
         const navigation = useNavigation();
-
+        const [isSelected1, setSelection1] = useState(false);
+        const [isSelected2, setSelection2] = useState(false);
+        const [isSelected3, setSelection3] = useState(false);
+        const [isSelected4, setSelection4] = useState(false);
+        const [isSelected5, setSelection5] = useState(false);
         return (
         <View style={styles.whiteback}>
             <ImageBackground source={Rectangle202} style={styles.rectangle}>
@@ -72,13 +77,69 @@ const Timeclick = () =>  {
                 <View style={styles.dline}/>
                 <View style={styles.content}>
                     <Text style={styles.alljob}>All Job </Text>
+                    <View style={styles.selectjob}>
+                        <CircleCheckBox
+                            checked={isSelected1}
+                            onToggle={setSelection1}
+                            labelPosition={LABEL_POSITION.RIGHT}
+                            label="Customer1"
+                            outerSize={15}
+                            innerSize={10}
+                            innerColor={"#562b63"}
+                            outerColor={"#562b63"} 
+                        />
+                        <View style={styles.dline1}/>
+                    </View>
+                    <View style={styles.selectjob}>
+                        <CircleCheckBox
+                            checked={isSelected1}
+                            onToggle={setSelection1}
+                            labelPosition={LABEL_POSITION.RIGHT}
+                            label="Customer1"
+                            outerSize={15}
+                            innerSize={10}
+                            innerColor={"#562b63"}
+                            outerColor={"#562b63"} 
+                        />
+                        <View style={styles.dline1}/>
+                    </View>
+                    <View style={styles.selectjob}>
+                        <CircleCheckBox
+                            checked={isSelected1}
+                            onToggle={setSelection1}
+                            labelPosition={LABEL_POSITION.RIGHT}
+                            label="Customer1"
+                            outerSize={15}
+                            innerSize={10}
+                            innerColor={"#562b63"}
+                            outerColor={"#562b63"} 
+                        />
+                        <View style={styles.dline1}/>
+                    </View>
+                    <View style={styles.selectjob}>
+                        <CircleCheckBox
+                            checked={isSelected1}
+                            onToggle={setSelection1}
+                            labelPosition={LABEL_POSITION.RIGHT}
+                            label="Customer1"
+                            outerSize={15}
+                            innerSize={10}
+                            innerColor={"#562b63"}
+                            outerColor={"#562b63"} 
+                        />
+                    </View>
+
+                    <View>
+                        <Text style={styles.cancelbutton} >Cancel</Text>
+                    </View>
                 </View>  
-                 
+                <Image source={Ellipse853} style={styles.cancelbottom}/>
+
             </View>
          
         </View>
         )
 }
 
-export default Timeclick 
+export default Selectjob 
 

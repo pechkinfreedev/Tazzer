@@ -56,7 +56,8 @@ export const styles = StyleSheet.create({
         fontWeight:'bold',
     },
     bottommenu0:{
-        marginTop:15,
+        marginTop:global.screenheight - 85,
+        position:'absolute'
     },
 
     topmain: {
@@ -179,6 +180,15 @@ export const styles = StyleSheet.create({
         // marginLeft: 30,
         position:'absolute',        
     },
+    dline1: {                    
+        borderBottomColor: '#dddddd',
+        borderBottomWidth: 1,
+        marginTop:27,
+        width:global.screenwidth-100,
+        zIndex:4,
+        marginLeft: -22,
+        position:'absolute',        
+    },
     content: {
         width:global.screenwidth-100,
         height:global.screenwidth-160,
@@ -195,6 +205,30 @@ export const styles = StyleSheet.create({
         marginTop:10,
         marginLeft:20,
         fontSize:18,
+    },    
+    selectjob:{
+        marginTop:10,
+        marginBottom:5,
+        marginLeft:20,
+        fontSize:18,
+    },
+    cancelbutton:{
+        textAlign:'center',
+        borderWidth:2,
+        borderColor:'#562b63',
+        borderRadius:20,
+        width:200,
+        height:30,
+        marginTop:10,
+        paddingTop:4,
+        marginLeft: (global.screenwidth-300)/2,
+    },
+    cancelbottom: {
+        width:40,
+        height:40,
+        marginLeft: (global.screenwidth-100)/2,
+        marginTop:15,
+    
     }
 
 })

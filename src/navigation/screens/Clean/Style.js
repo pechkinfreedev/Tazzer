@@ -128,6 +128,7 @@ export const styles = StyleSheet.create({
       marginTop:-10,
   },
   bottommenu:{
-      marginTop:30,
+      marginTop:global.screenheight - 85,
+      position:'absolute'
   }
 })

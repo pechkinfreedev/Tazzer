@@ -56,7 +56,8 @@ export const styles = StyleSheet.create({
         fontWeight:'bold',
     },
     bottommenu0:{
-        marginTop:15,
+        marginTop:global.screenheight - 85,
+        position:'absolute'
     },
 
     topmain: {

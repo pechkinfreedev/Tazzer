@@ -33,7 +33,7 @@ const Fpasswrod = () =>  {
                     <Text style={styles.timetext}>0.35</Text>
                 </View>
                 <Text style={styles.bottom1}>If you don't receive a code! <Text style={styles.bottom2}>Resend OPT</Text></Text>
-                <Text style={styles.subbutton}   onPress={ ()=>navigation.navigate('Selectjob')} >SUBMIT </Text>                 
+                <Text style={styles.subbutton}   onPress={ ()=>navigation.navigate('Details')} >SUBMIT </Text>                 
                 <Image source={login2} style={styles.login2}/>           
                 <Image source={login3} style={styles.login3} />           
                 <Image source={login4}  style={styles.login4}/>

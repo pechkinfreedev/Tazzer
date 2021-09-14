@@ -275,7 +275,8 @@ export const styles = StyleSheet.create({
         marginLeft:20,
     },
     bottommenu0:{
-        marginTop:15,
+        marginTop:global.screenheight - 85,
+        position:'absolute'
     },
     subbutton: {
       marginTop: 70,

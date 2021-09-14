@@ -5,7 +5,7 @@ import {images} from '../../../constants/images';
 import { useNavigation } from '@react-navigation/native';
 import {Bottommenu} from '../Bottommenu/Bottommenu';
 
-const {icarrow, clean1, clean2, check, icgroup, sman1, sman2, sman3,sman4,uncheck, Ellipse85, booking, Rectangle202, Rectangle285,Rectangle290, Ellipse71, Ellipse712,Ellipse713, schedule, searchimg2, searchimg3, cleaning,Gardeners ,handyman,Rectangle1 ,Rectangle2 ,Rectangle3 , Rectangle4} = images;
+const {icarrow, clean1, clean2, check, icgroup, sman1, sman2, sman3,sman4,uncheck, Ellipse85, booking, Rectangle202, Rectangle285,Rectangle290, Ellipse71, Ellipse712,Ellipse713, schedule, aleft, searchimg3, cleaning,Gardeners ,handyman,Rectangle1 ,Rectangle2 ,Rectangle3 , Rectangle4} = images;
 
 const Scheduling = () =>  {
         const navigation = useNavigation();
@@ -128,7 +128,7 @@ const Scheduling = () =>  {
                         <Image source={Ellipse85} style={styles.imgch1}/>
                         <View>
                             <View style={styles.viewflex}>
-                                <Text style={styles.deptext1}>Roofing  > Repair</Text>
+                                <Text style={styles.deptext1}>Roofing  &gt; Repair</Text>
                             </View>
                             <Text style={styles.deptext2}>08:00am-04:00pm(8h) </Text>
                         </View>

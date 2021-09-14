@@ -44,14 +44,7 @@ export const styles = StyleSheet.create({
         textAlign:'center',
     },
     circle: {
-        fontSize:40,
-        // fontWeight:'bold',
-        backgroundColor:'#562b63',
-        width:50,
-        height:50,
-        color:'white',
-        borderRadius:25,
-        marginTop:-120,
-        paddingLeft:15,
+
+        marginTop:-150,
     },
 });

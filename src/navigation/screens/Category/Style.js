@@ -250,7 +250,8 @@ export const styles = StyleSheet.create({
         color:'black',       
     },
     bottommenu0: {
-        marginTop:5,
+        marginTop:global.screenheight - 85,
+        position:'absolute'
     },
     textflex:{
         flexDirection:'row',
