@@ -5,12 +5,19 @@ import {images} from '../../../constants/images';
 import { useNavigation } from '@react-navigation/native';
 import {Bottommenu} from '../Bottommenu/Bottommenu';
 import CircleCheckBox, {LABEL_POSITION} from 'react-native-circle-checkbox';  
+import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
+import DateTimePickerModal from "react-native-modal-datetime-picker";
 
 const {icarrow, clean1, a4393, calendar4, icalarm, clean2, clean4, checklist5 } = images;
 
 const Request = () =>  {
         const navigation = useNavigation();
         const [isSelected1, setSelection1] = useState(false);
+        const vacation = {key: 'vacation', color: 'red', selectedDotColor: 'blue'};
+        const massage = {key: 'massage', color: 'blue', selectedDotColor: 'blue'};
+        const workout = {key: 'workout', color: 'green'};
+        const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
+
         return (
         <View style={styles.whiteback}>
             <View style={styles.toprect}>
@@ -25,9 +32,19 @@ const Request = () =>  {
 
             <View style={styles.content} >
                 <View style={styles.centerimg}>
-                    <Image source={a4393} style={styles.centerimg}/>
+                    <Image source={a4393} style={styles.centerimg1}/>
                 </View>
-                <Text style={styles.bottombutton} >Send</Text>
+                <View style={styles.calendar1}>
+                    {/* <CalendarList  /> */}
+                    {/* <DateTimePickerModal
+                        isVisible={isDatePickerVisible}
+                        mode="date"
+                        onConfirm={handleConfirm}
+                        onCancel={hideDatePicker}
+                    /> */}
+                </View>
+
+                <Text style={styles.bottombutton} >CREATE NEW MEETING</Text>
             </View>
 
 

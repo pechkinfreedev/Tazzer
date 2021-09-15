@@ -19,6 +19,15 @@ import Timesheet from './screens/Timesheet/Timesheet'
 import Checklist from './screens/Checklist/Checklist'
 import Morning from './screens/Morning/Morning'
 import Meeting from './screens/Meeting/Meeting'
+import Meeting1 from './screens/Meeting1/Meeting1'
+import Profile from './screens/Profile/Profile'
+import Eprofile from './screens/Eprofile/Eprofile'
+import Livetracking from './screens/Livetracking/Livetracking'
+import Dashboard from './screens/Dashboard/Dashboard'
+import Bookedorder from './screens/Bookedorder/Bookedorder'
+import Wallet from './screens/Wallet/Wallet'
+import Addw  from './screens/Addw/Addw'
+import Addw1  from './screens/Addw1/Addw1'
 
 import {heightPercentageToDP, widthPercentageToDP} from 'react-native-responsive-screen';
 
@@ -54,6 +63,15 @@ export default function createHomeStack() {
             <Stack.Screen name="Checklist" component={Checklist} />
             <Stack.Screen name="Morning" component={Morning} />
             <Stack.Screen name="Meeting" component={Meeting} />
+            <Stack.Screen name="Meeting1" component={Meeting1} />
+            <Stack.Screen name="Profile" component={Profile} />
+            <Stack.Screen name="Eprofile" component={Eprofile} />
+            <Stack.Screen name="Livetracking" component={Livetracking} />
+            <Stack.Screen name="Dashboard" component={Dashboard} />
+            <Stack.Screen name="Bookedorder" component={Bookedorder} />
+            <Stack.Screen name="Wallet" component={Wallet} />
+            <Stack.Screen name="Addw" component={Addw} />
+            <Stack.Screen name="Addw1" component={Addw1} />
         </Stack.Navigator>
     )
 }

@@ -45,6 +45,6 @@ export const styles = StyleSheet.create({
     },
     circle: {
 
-        marginTop:-150,
+        marginTop:-130,
     },
 });

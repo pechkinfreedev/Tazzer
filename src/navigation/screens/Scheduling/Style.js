@@ -75,7 +75,10 @@ export const styles = StyleSheet.create({
         marginRight:18,
     },  
     calheight: {
-        height:80,
+        // marginTop:10,
+        height:125,
+        width:global.screenwidth- 70,
+        marginLeft:14,
     },
     bottommenu0: {
         marginTop:70,
@@ -83,11 +86,9 @@ export const styles = StyleSheet.create({
     dline: {                    
         borderBottomColor: '#dddddd',
         borderBottomWidth: 1,
-        // marginTop:10,
+        marginTop:-40,
         width:250,    
         width:global.screenwidth - 40,
-
-
     },
     centerimage: {        
         justifyContent:'center',
@@ -279,8 +280,8 @@ export const styles = StyleSheet.create({
         position:'absolute'
     },
     subbutton: {
-      marginTop: 70,
-      marginLeft: (global.screenwidth - 300)/2 , 
+      marginTop: 65,
+      marginLeft: (global.screenwidth - 330)/2 , 
       fontSize:14,
       fontWeight: "bold",
     //   backgroundColor: "#562b63",
@@ -303,5 +304,9 @@ export const styles = StyleSheet.create({
       },
       elevation: 2,   
   },
+  zindex: {
+      zIndex:3,
+      backgroundColor:'white',
+  }
 
 })

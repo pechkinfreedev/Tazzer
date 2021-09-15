@@ -4,6 +4,7 @@ import {styles} from './Style';
 import {images} from '../../../constants/images';
 import { useNavigation } from '@react-navigation/native';
 import {Bottommenu} from '../Bottommenu/Bottommenu';
+import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 
 const {icarrow, clean1, clean2, check, icgroup, sman1, sman2, sman3,sman4,uncheck, Ellipse85, booking, Rectangle202, Rectangle285,Rectangle290, Ellipse71, Ellipse712,Ellipse713, schedule, aleft, searchimg3, cleaning,Gardeners ,handyman,Rectangle1 ,Rectangle2 ,Rectangle3 , Rectangle4} = images;
 
@@ -32,7 +33,7 @@ const Scheduling = () =>  {
             </ImageBackground>
             <View style={styles.topmain}>
                 <View style={styles.calheight} >
-                    <ScrollView horizontal style={styles.horiz}>                   
+                    {/* <ScrollView horizontal style={styles.horiz}>                   
                         <View style={styles.calendar}>
                             { slideList.map((item, i)=>(
                                 <View key={i} >                                
@@ -42,27 +43,29 @@ const Scheduling = () =>  {
                             ))                
                             }
                         </View>                    
-                    </ScrollView>
+                    </ScrollView> */}
+                    <Agenda />
                 </View>
                 <View style={styles.dline}/>
-                <View style={styles.viewflex}>
-                    <View>
-                        <Text style={styles.mid1}>26</Text>
-                        <Text style={styles.mid1}>Tue</Text>
-                    </View>
-                    <View style={styles.topdep}>
-                        <Image source={check} style={styles.imgch1}/>
+                <View style={styles.zindex}>
+                    <View style={styles.viewflex}>
                         <View>
-                            <View style={styles.viewflex}>
-                                <Text style={styles.deptext1}>Cleaning </Text>
-                                <Image source={icgroup} style={styles.icgroup}/>
-                            </View>
-                            <Text style={styles.deptext2}>08:00am-04:00pm(8h) </Text>
+                            <Text style={styles.mid1}>26</Text>
+                            <Text style={styles.mid1}>Tue</Text>
                         </View>
-                        <Image source={sman1} style={styles.sman1}/>
+                        <View style={styles.topdep}>
+                            <Image source={check} style={styles.imgch1}/>
+                            <View>
+                                <View style={styles.viewflex}>
+                                    <Text style={styles.deptext1}>Cleaning </Text>
+                                    <Image source={icgroup} style={styles.icgroup}/>
+                                </View>
+                                <Text style={styles.deptext2}>08:00am-04:00pm(8h) </Text>
+                            </View>
+                            <Image source={sman1} style={styles.sman1}/>
+                        </View>
                     </View>
-                </View>
-
+                </View>    
                 <View style={[styles.viewflex, styles.intertop]}>
                     <View>
                         <Text style={styles.mid1}></Text>

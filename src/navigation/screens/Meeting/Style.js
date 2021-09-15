@@ -68,6 +68,14 @@ export const styles = StyleSheet.create({
         alignItems:'center',
         marginTop:10,
     },
+    centerimg1:{
+        justifyContent:'center',
+        alignItems:'center',
+        marginTop:10,
+        height:120,
+        width:200,
+
+    },
 
     bottombutton:{
         backgroundColor:'#562b63',
@@ -76,13 +84,21 @@ export const styles = StyleSheet.create({
         borderRadius:20,
         color:"white",
         textAlign:'center',
-        marginTop:20,
+        marginTop:22,
         marginLeft: (global.screenwidth- 200)/2,
-        paddingTop:5,
-        fontSize:18,  
-
+        paddingTop:7,
+        fontSize:14,
+        fontWeight:'bold',  
     },
-
+    calendar1:{
+        marginLeft:20,
+        width:global.screenwidth - 80,
+        height:300,
+        marginHorizontal: 4,
+        padding: -8,
+        // borderBottomWidth: 1,
+        // borderBottomColor: 'lightgrey'
+    },
     bottommenu0:{
         marginTop:global.screenheight - 85,
         position:'absolute'
