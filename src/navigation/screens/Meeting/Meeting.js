@@ -7,8 +7,17 @@ import {Bottommenu} from '../Bottommenu/Bottommenu';
 import CircleCheckBox, {LABEL_POSITION} from 'react-native-circle-checkbox';  
 import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 import DateTimePickerModal from "react-native-modal-datetime-picker";
+import TimePicker from 'react-native-simple-time-picker';
 
 const {icarrow, clean1, a4393, calendar4, icalarm, clean2, clean4, checklist5 } = images;
+const hideDatePicker = () => {
+    setDatePickerVisibility(false);
+  };
+
+  const handleConfirm = (date) => {
+    console.warn("A date has been picked: ", date);
+    hideDatePicker();
+  };
 
 const Request = () =>  {
         const navigation = useNavigation();
@@ -16,8 +25,9 @@ const Request = () =>  {
         const vacation = {key: 'vacation', color: 'red', selectedDotColor: 'blue'};
         const massage = {key: 'massage', color: 'blue', selectedDotColor: 'blue'};
         const workout = {key: 'workout', color: 'green'};
-        const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
-
+        const [isDatePickerVisible, setDatePickerVisibility] = useState(true);
+        const [selectedHours, setSelectedHours] = useState(0);
+        const [selectedMinutes, setSelectedMinutes] = useState(0);
         return (
         <View style={styles.whiteback}>
             <View style={styles.toprect}>
@@ -36,12 +46,16 @@ const Request = () =>  {
                 </View>
                 <View style={styles.calendar1}>
                     {/* <CalendarList  /> */}
-                    {/* <DateTimePickerModal
-                        isVisible={isDatePickerVisible}
-                        mode="date"
-                        onConfirm={handleConfirm}
-                        onCancel={hideDatePicker}
-                    /> */}
+                    <TimePicker
+          selectedHours={selectedHours}
+          //initial Hourse value
+          selectedMinutes={selectedMinutes}
+          //initial Minutes value
+          onChange={(hours, minutes) => {
+            setSelectedHours(hours);
+            setSelectedMinutes(minutes);
+          }}
+        />
                 </View>
 
                 <Text style={styles.bottombutton} >CREATE NEW MEETING</Text>

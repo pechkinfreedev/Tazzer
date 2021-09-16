@@ -8,7 +8,7 @@ import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 
 const {icarrow, clean1, search, checklist1, checklist2, checklist3, checklist4, checklist5 } = images;
 
-const Request = () =>  {
+const Checklist = () =>  {
         const navigation = useNavigation();
 
         return (
@@ -52,5 +52,5 @@ const Request = () =>  {
         )
 }
 
-export default Request 
+export default Checklist 
 

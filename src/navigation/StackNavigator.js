@@ -28,6 +28,15 @@ import Bookedorder from './screens/Bookedorder/Bookedorder'
 import Wallet from './screens/Wallet/Wallet'
 import Addw  from './screens/Addw/Addw'
 import Addw1  from './screens/Addw1/Addw1'
+import Reviews from './screens/Reviews/Reviews'
+import Changepass from './screens/Changepass/Changepass'
+import Userchat from './screens/Userchat/Userchat'
+import Teamchat  from './screens/Teamchat/Teamchat'
+import Quote  from './screens/Quote/Quote'
+import Onchecklist from './screens/Onchecklist/Onchecklist'
+import Chatroom from './screens/Chatroom/Chatroom'
+import Chatroom1 from './screens/Chatroom1/Chatroom1'
+import AChatroom from './screens/Chatroom/AChatroom'
 
 import {heightPercentageToDP, widthPercentageToDP} from 'react-native-responsive-screen';
 
@@ -72,6 +81,17 @@ export default function createHomeStack() {
             <Stack.Screen name="Wallet" component={Wallet} />
             <Stack.Screen name="Addw" component={Addw} />
             <Stack.Screen name="Addw1" component={Addw1} />
+            <Stack.Screen name="Reviews" component={Reviews} />
+            <Stack.Screen name="Changepass" component={Changepass} />
+            <Stack.Screen name="Userchat" component={Userchat} />
+            {/* <Stack.Screen name="Teamchat" component={Teamchat} /> */}
+            <Stack.Screen name="Quote" component={Quote} />
+            <Stack.Screen name="Onchecklist" component={Onchecklist} />
+            <Stack.Screen name="Chatroom" component={Chatroom} />
+            <Stack.Screen name="AChatroom" component={AChatroom} />
+            <Stack.Screen name="Chatroom1" component={Chatroom1} />
+
+
         </Stack.Navigator>
     )
 }
