@@ -37,6 +37,15 @@ import Onchecklist from './screens/Onchecklist/Onchecklist'
 import Chatroom from './screens/Chatroom/Chatroom'
 import Chatroom1 from './screens/Chatroom1/Chatroom1'
 import AChatroom from './screens/Chatroom/AChatroom'
+import Home  from './business/Home/Home'
+import Jobpost  from './business/Jobpost/Jobpost'
+import Upload  from './business/Upload/Upload'
+import Uploade  from './business/Uploade/Uploade'
+import Joblist  from './business/Joblist/Joblist'
+import Joblistd  from './business/Joblistd/Joblistd'
+import Jobposte  from './business/Jobposte/Jobposte'
+import Profileb  from './business/Profile/Profile'
+
 
 import {heightPercentageToDP, widthPercentageToDP} from 'react-native-responsive-screen';
 
@@ -90,7 +99,14 @@ export default function createHomeStack() {
             <Stack.Screen name="Chatroom" component={Chatroom} />
             <Stack.Screen name="AChatroom" component={AChatroom} />
             <Stack.Screen name="Chatroom1" component={Chatroom1} />
-
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="Jobpost" component={Jobpost} />
+            <Stack.Screen name="Upload" component={Upload} />
+            <Stack.Screen name="Uploade" component={Uploade} />
+            <Stack.Screen name="Joblist" component={Joblist} />
+            <Stack.Screen name="Joblistd" component={Joblistd} />
+            <Stack.Screen name="Jobposte" component={Jobposte} />
+            <Stack.Screen name="Profileb" component={Profileb} />
 
         </Stack.Navigator>
     )

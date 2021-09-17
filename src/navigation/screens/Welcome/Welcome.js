@@ -13,7 +13,7 @@ export default class Welcome extends Component  {
     }
     render() {
         return (
-            <TouchableOpacity style={styles.container}   onPress={()=>this.props.navigation.navigate('Addw1')}>
+            <TouchableOpacity style={styles.container}   onPress={()=>this.props.navigation.navigate('Home')}>
                 {/* <View  onPress={()=>this.props.navigation.navigate('Intro')}> */}
                 <View>
                     {/* <Image source={require('../../../assets/logo.png')} />  */}
