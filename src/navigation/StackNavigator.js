@@ -37,6 +37,10 @@ import Onchecklist from './screens/Onchecklist/Onchecklist'
 import Chatroom from './screens/Chatroom/Chatroom'
 import Chatroom1 from './screens/Chatroom1/Chatroom1'
 import AChatroom from './screens/Chatroom/AChatroom'
+import Videocall from './screens/Videocall/Videocall'
+// import Call from './screens/Videocall/Callscreen'
+
+
 import Home  from './business/Home/Home'
 import Jobpost  from './business/Jobpost/Jobpost'
 import Upload  from './business/Upload/Upload'
@@ -45,6 +49,29 @@ import Joblist  from './business/Joblist/Joblist'
 import Joblistd  from './business/Joblistd/Joblistd'
 import Jobposte  from './business/Jobposte/Jobposte'
 import Profileb  from './business/Profile/Profile'
+
+
+import Homes  from './sole/Homes/Homes'
+import Profilet from './sole/Profilet/Profilet'
+import Profilet1 from './sole/Profilet1/Profilet1'
+import Dashboards from './sole/Dashboards/Dashboards'
+import Ordersdetail from './sole/Ordersdetail/Ordersdetail'
+
+import Dashboardf from './freelancer/Dashboardf/Dashboardf'
+import Bookedorderf from './freelancer/Bookedorderf/Bookedorderf'
+import Walletf from './freelancer/Walletf/Walletf'
+import Jobpostf from './freelancer/Jobpostf/Jobpostf'
+import Step8 from './freelancer/Jobpostf/Step8'
+import Invitation from './freelancer/Invitation/Invitation'
+import Addwf from './freelancer/Addwf/Addwf'
+import Addwf1 from './freelancer/Addwf1/Addwf1'
+import Paymenth from './freelancer/Paymenth/Paymenth'
+import Setting from './freelancer/Setting/Setting'
+import Setting1 from './freelancer/Setting1/Setting1'
+import Changepassf from './freelancer/Changepassf/Changepassf'
+import Userlist from './freelancer/Userlist/Userlist'
+import Userlist1 from './freelancer/Userlist1/Userlist1'
+
 
 
 import {heightPercentageToDP, widthPercentageToDP} from 'react-native-responsive-screen';
@@ -99,6 +126,9 @@ export default function createHomeStack() {
             <Stack.Screen name="Chatroom" component={Chatroom} />
             <Stack.Screen name="AChatroom" component={AChatroom} />
             <Stack.Screen name="Chatroom1" component={Chatroom1} />
+            {/* <Stack.Screen name="Call" component={Call} /> */}
+            <Stack.Screen name="Videocall" component={Videocall} />
+
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Jobpost" component={Jobpost} />
             <Stack.Screen name="Upload" component={Upload} />
@@ -107,6 +137,28 @@ export default function createHomeStack() {
             <Stack.Screen name="Joblistd" component={Joblistd} />
             <Stack.Screen name="Jobposte" component={Jobposte} />
             <Stack.Screen name="Profileb" component={Profileb} />
+            
+            <Stack.Screen name="Homes" component={Homes} />
+            <Stack.Screen name="Profilet" component={Profilet} />
+            <Stack.Screen name="Profilet1" component={Profilet1} />
+            <Stack.Screen name="Dashboards" component={Dashboards} />
+            <Stack.Screen name="Ordersdetail" component={Ordersdetail} />
+ 
+            <Stack.Screen name="Dashboardf" component={Dashboardf} />
+            <Stack.Screen name="Bookedorderf" component={Bookedorderf} />
+            <Stack.Screen name="Walletf" component={Walletf} />
+            <Stack.Screen name="Jobpostf" component={Jobpostf} />
+            <Stack.Screen name="Step8" component={Step8} />
+            <Stack.Screen name="Invitation" component={Invitation} />
+            <Stack.Screen name="Addwf" component={Addwf} />
+            <Stack.Screen name="Addwf1" component={Addwf1} />
+            <Stack.Screen name="Paymenth" component={Paymenth} />
+            <Stack.Screen name="Setting" component={Setting} />
+            <Stack.Screen name="Setting1" component={Setting1} />
+            <Stack.Screen name="Changepassf" component={Changepassf} />
+            <Stack.Screen name="Userlist" component={Userlist} />
+            <Stack.Screen name="Userlist1" component={Userlist1} />
+
 
         </Stack.Navigator>
     )
